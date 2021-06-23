@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav>
+                <div class="kobelogo">
+                    <a href="#"><img src="images/blackmamba_logo.png" alt="kobe-bryan-logo"> </a>
+                </div>
+                <div class="navlinks" id=navLinks>
+                    <ul>
+                        <i><a href="">HOME</a></i>
+                        <i><a href="">TRIBUTE</a></i>
+                        <i><a href="">STORY</a></i>
+                    </ul>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <!--* Sticky Scroll *-->
+            <script type="text/javascript">
+                window.addEventListener("scroll", function() {
+                    var header = document.querySelector("nav");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
+
+            <div class="main" id="main">
+
+                <div class="main-col">
+
+                    <div class="main-col-img">
+                        <a href="#"> <img src="images/logo-dark.png" alt=""></a>
+                    </div>
+
+                    <div class="main-col-text">
+                        <h1>Karl Louise <span class="text-secondary">Rito</span></h1>
+                        <div class="sub-main">
+                            <h2>Front End Development Internship</h2>
+                            <h3>Intern Id: SH-IT-48536</h3>
+                        </div>
+                        <div class="quote">
+                            <p> "LIFE IS NOT A GAME OF LUCK. <br> IF YOU WANNA WIN, <br> WORK HARD"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-col">
+                    <a href=""> <i class="fa fa-chevron-circle-down"></i></a>
+                </div>
+
+            </div>
+        </header>
+    </section>
+
+    <!--* JavaScript for Toggle Menu *-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.top = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.top = "-200px";
+        }
+    </script>
+
+    <!--* TRIBUTE *-->
+    <section class="tribute">
+        <h1>KOBE BRYANT TRIBUTE</h1>
+        <p> Kobe Bryant: A basketball legend</p>
+        <div class="row">
+            <div class="tribute-col">
+
+            </div>
+        </div>
+    </section>
+
+    <!--* FOOTER *-->
+    <section>
+        <footer>
+            <div class="back-to-top">
+                <a href="#main"><i class="fas fa-chevron-up"></i></a>
+
+            </div>
+
+            <h4>Karl Louise Rito</h4>
+        </footer>
+    </section>
+</body>
+
+</html>

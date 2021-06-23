@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    justify-content: center;
+    background: linear-gradient(#050202, #dee6b2);
+}
+
+nav {
+    position: fixed;
+    padding: 15px;
+    width: 100%;
+    transition: .6s;
+    z-index: 1;
+}
+
+nav.sticky {
+    padding: 5px 20px;
+    background: #aaaaaa;
+    transition: .6s;
+}
+
+.kobelogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    filter: drop-shadow(100px 100px 100px #585858);
+}
+
+.navlinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navlinks i {
+    padding: 20px;
+}
+
+
+/** LANDING TEXT **/
+
+.main {
+    display: flex;
+    text-align: center;
+    padding-top: 20vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-col a i {
+    padding: 10px;
+}
+
+.main-col-img {
+    display: flex;
+}
+
+.main img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.main h1 {
+    font-family: 'Roboto';
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    text-align: center;
+}
+
+.text-secondary {
+    color: black;
+}
+
+p {
+    color: #f1d4d4;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.sub-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote p {
+    font-family: 'Bebas Neue';
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.fa {
+    font-size: 40px;
+    color: #323232;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav {
+        width: 100%;
+        display: flex;
+    }
+    .kobelogo {
+        justify-content: flex-start;
+    }
+    .main h1 {
+        font-size: 4rem;
+    }
+    nav>* {
+        flex-basis: 100%;
+    }
+    nav i.fa.fa-bars {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .navlinks ul li {
+        display: block;
+    }
+    .navlinks {
+        position: fixed;
+        background: #7e7e7e;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 70px;
+        justify-content: flex-end;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px 10px 15px 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navlinks ul {
+        padding: 30px 0 30px 0;
+    }
+    .main-col-img {
+        margin: 0;
+    }
+}
+
+
+/** TRIBUTE **/
+
+.tribute {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
