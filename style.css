@@ -6,12 +6,18 @@
     scroll-behavior: smooth;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 header {
     display: flex;
     min-height: 100vh;
     position: relative;
     justify-content: center;
-    background: linear-gradient(#050202, #dee6b2);
+    background: linear-gradient(#050202, #ffffff);
 }
 
 nav {
@@ -112,7 +118,7 @@ h3 {
 }
 
 p {
-    color: #f1d4d4;
+    color: #0a6a00;
     font-size: 14px;
     font-weight: 300;
     padding: 10px;
@@ -145,7 +151,6 @@ nav .fa {
 
 @media (max-width: 700px) {
     nav {
-        width: 100%;
         display: flex;
     }
     .kobelogo {
@@ -196,6 +201,7 @@ nav .fa {
 /** TRIBUTE **/
 
 .tribute {
+    position: relative;
     max-width: 100%;
     display: flex;
     height: 100vh;
@@ -220,6 +226,9 @@ nav .fa {
 }
 
 .tribute-text h1 {
+    text-decoration: underline;
+    text-decoration-thickness: 6%;
+    text-underline-position: under;
     font-size: 6rem;
 }
 
@@ -228,6 +237,104 @@ nav .fa {
 }
 
 .tribute-text p {
+    margin-top: 30px;
+    color: #dee6b2;
     font-size: 2rem;
     font-weight: 400;
+}
+
+
+/** VIDEO TRIBUTE **/
+
+
+/** FOOTER **/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    margin-top: 5rem;
+    background-color: #585858;
+    display: flex;
+}
+
+.back-to-top {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    background-color: #585858;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: .5s;
+    z-index: 0;
+}
+
+.back-to-top:hover {
+    transform: translate(-50%, -10%);
+}
+
+i.fa.fa-chevron-up {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.container>* {
+    flex-basis: 100%;
+}
+
+.footer-left {
+    display: flex;
+    padding-left: 50px;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-left h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.footer-right h4 {
+    font-size: 20px;
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li a {
+    padding: 15px;
+}
+
+.social-icons .fa {
+    display: block;
+    font-size: 30px;
+    margin: 0 15px;
+    color: #050202;
 }
