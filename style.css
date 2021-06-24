@@ -163,7 +163,7 @@ nav .fa {
     .navlinks {
         position: fixed;
         background: #7e7e7e;
-        top: 0;
+        top: -200px;
         right: 0;
         width: 100%;
         height: 70px;
