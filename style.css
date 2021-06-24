@@ -237,14 +237,232 @@ nav .fa {
 }
 
 .tribute-text p {
+    font-family: 'Bebas Neue';
     margin-top: 30px;
-    color: #dee6b2;
-    font-size: 2rem;
+    color: #a9a9a9;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
 
-/** VIDEO TRIBUTE **/
+/** STORY **/
+
+.story {
+    width: 80%;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.storyrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-col {
+    flex-basis: 44%;
+}
+
+.story-col h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 6%;
+    text-underline-position: under;
+}
+
+.story-col p {
+    padding: 0;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.story-col p a {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #0a6a00;
+    transition: .6s;
+}
+
+.story-col p a:hover {
+    text-decoration: none;
+    color: #050202;
+}
+
+.story-col img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .storyrow {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .storyrow>* {
+        flex-basis: 100%;
+    }
+    .story-col h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+    .story-col p {
+        padding-bottom: 10px;
+    }
+    .story-col img {
+        max-width: 100%;
+    }
+}
+
+
+/** MOMENTS **/
+
+.moments {
+    width: 80%;
+    padding-top: 200px;
+    margin: 100px auto;
+    padding: 100px 0 50px;
+    text-align: center;
+    background: #fce7e7;
+    border-radius: 10px;
+}
+
+.moments h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 6%;
+    text-underline-position: under;
+}
+
+.moments p {
+    color: #a9a9a9;
+    font-family: 'Bebas Neue';
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.moments-row {
+    display: flex;
+    text-align: left;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+.moments-row>* {
+    flex-basis: 100%;
+}
+
+.moments-row ul li {
+    margin: 50px;
+}
+
+.moments-col img {
+    width: 100%;
+}
+
+.moments-col .bold {
+    font-weight: bold;
+}
+
+.moments-col h4 {
+    text-align: center;
+}
+
+.moments-col a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #050202;
+    transition: .6s;
+}
+
+.moments-col a:hover {
+    text-decoration: none;
+    color: #0a6a00;
+}
+
+
+/** CONTACT **/
+
+.contact-us {
+    width: 50%;
+    margin: auto;
+}
+
+.contact-us .row {
+    align-items: center;
+}
+
+.contact-col {
+    margin-bottom: 10rem;
+}
+
+.contact-col h3 {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.gender-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    resize: vertical;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.contact-col input:hover,
+.contact-col textarea:hover {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ccc;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    background-color: #fce7e7;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.hero-btn:hover {
+    border: 1px solid #ccc;
+    background: #aaaaaa;
+    color: #ffffff;
+    transition: 1s;
+}
 
 
 /** FOOTER **/
@@ -330,10 +548,20 @@ i.fa.fa-chevron-up {
 
 .social-icons {
     display: flex;
+    margin: 20px;
+    padding: 0;
+}
+
+.social-icons li {
+    padding-top: 15px;
+}
+
+.social-icons>* {
+    flex-basis: 100%;
 }
 
 .social-icons li a {
-    padding: 15px;
+    padding: 0;
 }
 
 .social-icons .fa {
@@ -341,73 +569,18 @@ i.fa.fa-chevron-up {
     font-size: 30px;
     margin: 0 15px;
     color: #050202;
+    line-height: 0;
+    transition: .6s;
 }
 
-
-/** STORY **/
-
-.story {
-    width: 80%;
-    margin: auto;
-    padding-top: 100px;
+.social-icons li .fa:hover {
+    color: #7e7e7e;
 }
 
-.storyrow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.social-media p {
+    color: #050202;
 }
 
-.story-col {
-    flex-basis: 44%;
-}
-
-.story-col h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    text-decoration-thickness: 6%;
-    text-underline-position: under;
-}
-
-.story-col p {
-    padding: 0;
-    text-align: justify;
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.story-col p a {
-    font-size: 20px;
-    text-decoration: underline;
-    color: #0a6a00;
-}
-
-.story-col p a:hover {
-    text-decoration: none;
-}
-
-.story-col img {
-    width: 100%;
-    height: auto;
-}
-
-@media (max-width: 800px) {
-    .storyrow {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .storyrow>* {
-        flex-basis: 100%;
-    }
-    .story-col h1 {
-        font-size: 45px;
-        text-align: center;
-    }
-    .story-col p {
-        padding-bottom: 10px;
-    }
-    .story-col img {
-        max-width: 100%;
-    }
+.social-media p .fa {
+    font-size: 13px;
 }
