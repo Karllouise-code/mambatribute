@@ -1,5 +1,7 @@
 # Responsive Tribute Page - Kobe Bryant
 ## Side Hustle Front End Internship
+#### PURE HTML AND CSS
+
 ### Week 1: Task 1
 Create a Tribute Page
 - Heading: Name of Internship 
