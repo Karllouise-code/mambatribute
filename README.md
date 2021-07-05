@@ -1,7 +1,18 @@
 # Responsive Tribute Page - Kobe Bryant
 ## Side Hustle Front End Internship
+#### PURE HTML AND CSS
+
 ### Week 1: Task 1
-Write a range function that takes two arguments, start and end, and returns an array containing all the numbers from start up to (and including) end. Next, write a sum function that takes an array of numbers and returns the sum of these numbers.
+Create a Tribute Page
+- Heading: Name of Internship 
+- Name of Intern
+- Intern ID
+- Best Life Quote
+- Include the Picture of the person you’re writing tribute to
+
+Write your tribute, it must contain the use of at least 20 html tags in no order
+Include a form section whose input fields are Name, Phone Number, Email Address, Date, Sex
+Submit on the codepen you created earlier, only a codepen link or github, if you can use it.
 
 
 ### See Website
