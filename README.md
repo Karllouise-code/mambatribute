@@ -27,3 +27,7 @@ Submit on the codepen you created earlier, only a codepen link or github, if you
 
 ## Mobile Mode
 ![](https://github.com/Karllouise-code/tribute-page-bmamba/blob/master/images/tribute_mobile.gif)
+
+
+## Full Screenshot
+![](https://github.com/Karllouise-code/mambatribute/blob/master/images/tributeScreenshot.png)
